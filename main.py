@@ -6,7 +6,7 @@ def spinning_loader(duration):
     end_time = time.time() + duration  # Stop after the specified duration
     while time.time() < end_time:
         for char in spinner:
-            sys.stdout.write(f'\r{char}')  # Overwrite the current line
+            sys.stdout.write(f'\t\t\r{char}')  # Overwrite the current line
             sys.stdout.flush()  # Ensure output is shown immediately
             time.sleep(0.1)  # Adjust speed of the spinner
 
